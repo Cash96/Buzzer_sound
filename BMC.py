@@ -28,7 +28,7 @@ class ButtonMatrix():
     def activateButton(self, rowPin, colPin):
         # get the button index
         btnIndex = self.buttonIDs[rowPin][colPin] - 1
-        print("button " + str(btnIndex + 1) + " pressed")
+        print("button " + str(btnIndex) + " pressed")
         # prevent button presses too close together
         time.sleep(.3)
         return btnIndex
