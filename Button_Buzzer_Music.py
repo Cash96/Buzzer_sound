@@ -22,14 +22,14 @@ buttons = BMC.ButtonMatrix()
 #human frequency for hearing goes from 20-20,000
 def ChangeSound(B):    
     if B == 0:
-        print("Changing frequency to 5")
+        print("Changing frequency to 300")
         p.ChangeFrequency(300)
         DutyCycle = 5
     elif B == 1:
-        print("Changing frequency to 90")
+        print("Changing frequency to 400")
         p.ChangeFrequency(400)
     elif B == 2:
-        print("Changing frequency to 90")
+        print("Changing frequency to 500")
         p.ChangeFrequency(500)
     #add more elif statements here to accomodate more buttons
         
